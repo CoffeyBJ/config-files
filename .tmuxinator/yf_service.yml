@@ -1,0 +1,41 @@
+# ~/.tmuxinator/yf_service.yml
+
+name: yf_service
+root: ~/go
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+windows:
+  - editor:
+      layout: 56a8,172x47,0,0{111x47,0,0[111x33,0,0,0,111x13,0,34,4],60x47,112,0,3}
+      panes:
+        - IDE:
+           - cd src/yuanfen
+           - vim
+        -
+        -
+  - service:
+      layout: f84a,202x56,0,0{101x56,0,0[101x28,0,0,41,101x27,0,29,46],100x56,102,0[100x28,102,0,44,100x27,102,29,45]}
+      panes:
+          - bin/yf_service conf/yf_service_test.yaml
+          - bin/hub conf/hub.yaml
+          - bin/pusher conf/pusher.yaml
+          - bin/pusher conf/pusher2.yaml
+  - client:
+      layout: cc23,202x56,0,0{101x56,0,0,69,100x56,102,0,70}
+      panes:
+          - bin/client 127.0.0.1 12377 11263717
+          - bin/client 127.0.0.1 12377 11263718

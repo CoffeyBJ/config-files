@@ -1,0 +1,32 @@
+# ~/.tmuxinator/location.yml
+
+name: location
+root: ~/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+windows:
+  - editor:
+      layout: 56a8,172x47,0,0{111x47,0,0[111x33,0,0,0,111x13,0,34,4],60x47,112,0,3}
+      panes:
+        - IDE:
+           - cd go/src/location
+           - vim adjacent.go
+        -
+        -
+  - server86: ssh root@120.131.64.86
+  - server87: ssh root@120.131.64.87
+  - server88: ssh root@120.131.64.88

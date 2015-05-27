@@ -1,0 +1,13 @@
+$TTL 1D  
+@ IN SOA @ root.docker. (  
+        2010110901
+        28800
+        14400
+        3600000
+        86400
+)
+  
+        		IN NS @        		; 直接输入域名，访问@  
+        		IN A 127.0.0.1 		; 直接输入域名(www)，解析到的外网IP  
+master.main.mysql	IN A 192.168.1.146   	; 输入子域名，解析到的内网IP  
+slave1.main.mysql	IN A 192.168.1.90  

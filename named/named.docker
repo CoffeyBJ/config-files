@@ -1,4 +1,4 @@
-$TTL 1D  
+$TTL 60  
 @ IN SOA @ root.docker. (  
         2010110901
         28800
@@ -7,7 +7,14 @@ $TTL 1D
         86400
 )
   
-        		IN NS @        		; 直接输入域名，访问@  
-        		IN A 127.0.0.1 		; 直接输入域名(www)，解析到的外网IP  
-master.main.mysql	IN A 192.168.1.146   	; 输入子域名，解析到的内网IP  
-slave1.main.mysql	IN A 192.168.1.90  
+        		IN NS @
+        		IN A 127.0.0.1
+master.main.mysql	IN A 192.168.1.146
+slave1.main.mysql	IN A 192.168.1.90
+slave2.main.mysql	IN A 192.168.1.90
+master.sort.mysql	IN A 192.168.1.86
+slave1.sort.mysql	IN A 192.168.1.87
+slave2.sort.mysql	IN A 192.168.1.88
+master.message.mysql	IN A 192.168.1.81
+slave1.message.mysql	IN A 192.168.1.82
+slave2.message.mysql	IN A 192.168.1.82

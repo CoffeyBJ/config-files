@@ -18,3 +18,9 @@ slave2.sort.mysql	IN A 192.168.1.88
 master.message.mysql	IN A 192.168.1.81
 slave1.message.mysql	IN A 192.168.1.82
 slave2.message.mysql	IN A 192.168.1.82
+master.main.redis	IN A 192.168.1.86
+slave1.main.redis	IN A 192.168.1.87
+slave2.main.redis	IN A 192.168.1.88
+master.cache.redis	IN A 192.168.1.90
+slave1.cache.redis	IN A 192.168.1.90
+slave2.cache.redis	IN A 192.168.1.90

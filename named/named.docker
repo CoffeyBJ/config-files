@@ -29,3 +29,7 @@ $ORIGIN main.redis.docker.
 master                  A       192.168.1.86
 slave1                  A       192.168.1.87
 slave2                  A       192.168.1.88
+$ORIGIN push.docker.
+hub                     A       192.168.1.88
+pusher1                 A       192.168.1.86
+pusher2                 A       192.168.1.87

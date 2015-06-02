@@ -9,6 +9,8 @@ $TTL 60
   
         		IN NS @
         		IN A 127.0.0.1
+yfservice1             A       192.168.1.86
+yfservice2             A       192.168.1.87
 $ORIGIN main.mysql.docker.
 master                  A       192.168.1.146
 slave1                  A       192.168.1.90

@@ -1,8 +1,8 @@
 $TTL 60  
 @ IN SOA @ root.docker. (  
-        2010110901
-        28800
-        14400
+        2015052805
+        60
+        60
         3600000
         86400
 )
@@ -31,5 +31,7 @@ slave1                  A       192.168.1.87
 slave2                  A       192.168.1.88
 $ORIGIN push.docker.
 hub                     A       192.168.1.88
-pusher1                 A       192.168.1.86
-pusher2                 A       192.168.1.87
+pusher1                 A       192.168.1.81
+pusher2                 A       192.168.1.82
+pusher3                 A       192.168.1.81
+pusher4                 A       192.168.1.82

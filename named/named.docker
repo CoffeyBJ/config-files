@@ -24,6 +24,10 @@ $ORIGIN sort.mysql.docker.
 master                  A       192.168.1.86
 slave1                  A       192.168.1.87
 slave2                  A       192.168.1.88
+$ORIGIN stat.mysql.docker.
+master                  A       192.168.1.78
+slave1                  A       192.168.1.78
+slave2                  A       192.168.1.78
 $ORIGIN cache.redis.docker.
 master                  A       192.168.1.90
 slave1                  A       192.168.1.90

@@ -11,6 +11,7 @@ $TTL 60
         		IN A 127.0.0.1
 yfservice1             A       192.168.1.86
 yfservice2             A       192.168.1.87
+yfservice.admin        A       192.168.1.150
 $ORIGIN main.mysql.docker.
 master                  A       192.168.1.92
 slave1                  A       192.168.1.90

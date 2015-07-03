@@ -21,6 +21,7 @@ $ORIGIN message.mysql.docker.
 master                  A       192.168.1.81
 slave1                  A       192.168.1.82
 slave2                  A       192.168.1.82
+slave3                  A       192.168.1.82
 $ORIGIN sort.mysql.docker.
 master                  A       192.168.1.86
 slave1                  A       192.168.1.87

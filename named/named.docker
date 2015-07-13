@@ -17,27 +17,33 @@ master                  A       192.168.1.92
 slave1                  A       192.168.1.90
 slave2                  A       192.168.1.90
 slave3                  A       192.168.1.78
+test                  A       192.168.1.91
 $ORIGIN message.mysql.docker.
 master                  A       192.168.1.81
 slave1                  A       192.168.1.82
 slave2                  A       192.168.1.82
-slave3                  A       192.168.1.82
+slave3                  A       192.168.1.78
+test                  A       192.168.1.91
 $ORIGIN sort.mysql.docker.
 master                  A       192.168.1.86
 slave1                  A       192.168.1.87
 slave2                  A       192.168.1.88
+test                  A       192.168.1.91
 $ORIGIN stat.mysql.docker.
 master                  A       192.168.1.78
 slave1                  A       192.168.1.78
 slave2                  A       192.168.1.78
+test                  A       192.168.1.91
 $ORIGIN cache.redis.docker.
 master                  A       192.168.1.90
 slave1                  A       192.168.1.90
 slave2                  A       192.168.1.90
+test                  A       192.168.1.91
 $ORIGIN main.redis.docker.
 master                  A       192.168.1.86
 slave1                  A       192.168.1.87
 slave2                  A       192.168.1.88
+test                  A       192.168.1.91
 $ORIGIN push.docker.
 hub1                     A       192.168.1.87
 hub2                     A       192.168.1.88
@@ -45,3 +51,6 @@ pusher1                 A       192.168.1.81
 pusher2                 A       192.168.1.82
 pusher3                 A       192.168.1.81
 pusher4                 A       192.168.1.82
+test.pusher1                  A       192.168.1.91
+test.pusher2                  A       192.168.1.91
+test.hub                  A       192.168.1.91

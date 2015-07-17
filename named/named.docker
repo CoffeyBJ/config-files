@@ -18,6 +18,7 @@ slave1                  A       192.168.1.90
 slave2                  A       192.168.1.90
 slave3                  A       192.168.1.78
 test                  A       192.168.1.91
+backup                  A       192.168.1.78
 $ORIGIN message.mysql.docker.
 master                  A       192.168.1.81
 slave1                  A       192.168.1.82

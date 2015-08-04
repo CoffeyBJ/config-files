@@ -9,6 +9,9 @@ $TTL 60
   
         		IN NS @
         		IN A 127.0.0.1
+vcode             A       192.168.1.68
+vcode1            A       192.168.1.90
+vcode2            A       192.168.1.81
 yfservice1             A       192.168.1.86
 yfservice2             A       192.168.1.87
 yfservice.admin        A       192.168.1.150
@@ -20,7 +23,7 @@ slave3                  A       192.168.1.78
 test                  A       192.168.1.91
 backup                  A       192.168.1.78
 $ORIGIN message.mysql.docker.
-master                  A       192.168.1.81
+master                  A       192.168.1.201
 slave1                  A       192.168.1.82
 slave2                  A       192.168.1.82
 slave3                  A       192.168.1.78

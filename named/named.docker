@@ -58,6 +58,7 @@ pusher1                 A       192.168.1.81
 pusher2                 A       192.168.1.82
 pusher3                 A       192.168.1.81
 pusher4                 A       192.168.1.82
+pusher5                 A       192.168.1.93
 test.pusher1                  A       192.168.1.91
 test.pusher2                  A       192.168.1.91
 test.hub                  A       192.168.1.91

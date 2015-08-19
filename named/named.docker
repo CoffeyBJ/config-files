@@ -18,7 +18,7 @@ yfservice2             A       192.168.1.87
 yfservice.test             A       192.168.1.91
 yfservice.admin        A       192.168.1.150
 $ORIGIN main.mysql.docker.
-master                  A       192.168.1.92
+master                  A       192.168.1.203
 slave1                  A       192.168.1.90
 slave2                  A       192.168.1.90
 slave3                  A       192.168.1.78

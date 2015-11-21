@@ -25,14 +25,14 @@ slave3                  A       192.168.1.78
 test                  A       192.168.1.91
 backup                  A       192.168.1.78
 $ORIGIN message.mysql.docker.
-master                  A       192.168.1.201
+master                  A       192.168.1.81
 slave1                  A       192.168.1.82
 slave2                  A       192.168.1.82
 slave3                  A       192.168.1.78
 test                  A       192.168.1.91
 backup                  A       192.168.1.78
 $ORIGIN sort.mysql.docker.
-master                  A       192.168.1.202
+master                  A       192.168.1.86
 slave1                  A       192.168.1.87
 slave2                  A       192.168.1.88
 test                  A       192.168.1.91
